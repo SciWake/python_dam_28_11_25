@@ -12,8 +12,18 @@ def my_pow(a, b):
     return my_pow(a, b - 1) * a
 
 
-def my_pow(a, b):
+def my_pow_ternary(a, b):
     return 1 if b == 0 else my_pow(a, b - 1) * a
 
 
-print(my_pow(10, 1))
+print(my_pow_ternary(10, 2))
+
+
+# Реешние через хвостовую рекурсию
+def tail_recursive_pow(a, b, acc=1):
+    if b == 0:
+        return acc
+    return tail_recursive_pow(a, b - 1, acc * a)
+
+
+print(tail_recursive_pow(10, 2))
