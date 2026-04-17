@@ -1,0 +1,14 @@
+2026-04-16 10:15:02 [INFO] System boot initialized successfully.
+2026-04-16 10:15:05 [INFO] Network interface eth0 brought up.
+2026-04-16 10:15:12 [WARNING] DNS server 8.8.8.8 is taking too long to respond.
+2026-04-16 10:15:45 [ERROR] Failed to mount external drive /dev/sdb1: Permission denied.
+2026-04-16 10:16:01 [INFO] User 'admin' logged in from 192.168.1.50.
+2026-04-16 10:18:22 [DEBUG] Fetching background updates...
+2026-04-16 10:18:25 [INFO] Background updates completed. 0 packages updated.
+2026-04-16 10:25:14 [ERROR] Database connection timeout: Server not reachable.
+2026-04-16 10:26:00 [WARNING] High memory usage detected: 85% in use.
+2026-04-16 10:30:11 [INFO] User 'admin' logged out.
+2026-04-16 10:35:09 [CRITICAL] Kernel panic - not syncing: Fatal exception in interrupt.
+2026-04-16 10:40:02 [INFO] System reboot initiated by user 'root'.
+2026-04-16 10:41:15 [ERROR] Nginx service failed to start. Port 80 is already in use.
+2026-04-16 10:42:00 [INFO] System boot initialized successfully.
