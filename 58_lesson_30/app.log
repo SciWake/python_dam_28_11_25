@@ -1,0 +1,5 @@
+2026-04-23 09:00:01 INFO user=12 action=login
+2026-04-23 09:00:02 ERROR user=15 action=payment
+2026-04-23 09:00:03 ERROR user=18 action=login
+2026-04-23 09:00:04 WARNING user=22 action=logout
+2026-04-23 09:00:05 ERROR user=15 action=refund
