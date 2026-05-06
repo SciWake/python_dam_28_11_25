@@ -1,17 +1,17 @@
 """ 
-Задача 2.
-Написать шаблон, который:
-
-матчит "Иванов Иван" и "Иванов Иван Иванович",
-- в group(1) — фамилия,
-- в group(2) — имя,
-- в group(3) — отчество или None.
+Напиши паттерн, который найдёт только домены с нужными зонами:
+site.com, api.site.org, start.start.start.docs.python.org, test.net
 """
 
 import re
 
-text = "Иванов Иван, Петров Пётр Петрович, Сидоров Сидор"
+text = """site.com
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+api.site.org start.start.start.docs.python.org local test.net
+"""
 
-pattern = r'...'  # допиши сам
-for m in re.finditer(pattern, text):
-    print(m.group(1), m.group(2), m.group(3))
+domen = re.findall(r"\w+(?:\.*\w*)*\.(?:org|com|net)", text)
+print(domen)
+
+domen = re.findall(r"[\w.]+\.(?:com|org|net)\b", text)
+print(domen)
